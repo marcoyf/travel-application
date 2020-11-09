@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-us" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+Form:
+<br>
+<form action="#" th:action="@{/mvc/travel}" th:object="${travelDto}" method="post">
+	<p>userId: <input type="text" th:field="*{userId}" /></p>
+	<p>source: <input type="text" th:field="*{source}" /></p>
+	<p>destination: <input type="text" th:field="*{destination}" /></p>
+	<p><input type="submit" value="Submit" /><input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>
